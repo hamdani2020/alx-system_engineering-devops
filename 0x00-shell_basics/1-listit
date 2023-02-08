@@ -1,10 +1,2 @@
 #!/bin/bash
-
-current_directory=$(pwd)
-contents=$(ls $ 0x00-shell_basics)
-
-echo "Contents of directory: $ 0x00-shell_basics"
-for content in $contents; do
-    echo $content
-done
-
+echo $(pwd 0x00-shell_basics)
