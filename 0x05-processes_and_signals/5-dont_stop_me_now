@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# This script stops any process when execute
+
+kill "$(pgrep -f 4-to_infinity_and_beyond)"
