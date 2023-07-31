@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+# This script displays the ff:
+# To infinity and beyound indefinitely
+# I hate the kill command when receiving a SIGTERM signal
+# Y U no love me?!
+
+terminator() {
+	rm /var/run/myscript.pid
+	exit
+}
+
+echo "$$" > /var/run/myscript.pid
+
+while true
+do
+	echo "To infinity and beyond"
+	sleep 2
+	trap 'echo "Y U no love me?!"' SIGTERM
+	trap 'echo "I hate the kill command" && terminator' SIGTERM
+	trap 'terminator' SIGQUIT
+done
