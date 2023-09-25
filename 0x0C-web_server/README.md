@@ -3,7 +3,7 @@
 
 ## Concepts
 <h5> For this project, we expect you to look at this concepts</h5>
-- [What is a Child Process?](https://intranet.alxswe.com/concepts/110)
+- What is a Child Process?
 
 ***
 
@@ -22,3 +22,6 @@ echo hello world > /tmp/test
 sed -i 's/80/8080/g' /etc/nginx/sites-enabled/default
 sylvain@ubuntu
 ```
+
+# Resources
+- [How the web works](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/How_the_Web_works)
