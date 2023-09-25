@@ -33,11 +33,10 @@ sylvain@ubuntu
 - [Not found HTTP response code](https://en.wikipedia.org/wiki/HTTP_404)
 - [Logs files on Linux](https://www.cyberciti.biz/faq/ubuntu-linux-gnome-system-log-viewer/)
 
-<h4>For reference</h4>
-- [RFC 7231 HTTP/1.1](https://datatracker.ietf.org/doc/html/rfc7231)
-- [RFC 7540 (HTTP/2)](https://datatracker.ietf.org/doc/html/rfc7540)
 
-<h4>man or help</h4>
+
+## man or help
+
 - `scp`
 
 - `curl`
