@@ -8,6 +8,6 @@ sudo apt-get install -y haproxy
 sudo sed -i "8 a\ENABLED=1\n" /etc/default/haproxy
 
 # Config load balancer with web servers
-sudo sed -i "$ a\ \nfrontend load_balancer\n\tbind\t0.0.0.0:80\n\tmode\thttp\n\tdefault_backend\tweb_servers\n\nbackend web_servers\n\tbalance\troundrobin\n\tserver\t1115-web-01\t34.73.76.135:80\n\tserver\t1115-web-02\t18.209.20.255:80" /etc/haproxy/haproxy.cfg
+sudo sed -i "$ a\ \nfrontend load_balancer\n\tbind\t0.0.0.0:80\n\tmode\thttp\n\tdefault_backend\tweb_servers\n\nbackend web_servers\n\tbalance\troundrobin\n\tserver\t236369-web-01\t18.209.180.135:80\n\tserver\t236369-web-02\t54.165.237.14:80" /etc/haproxy/haproxy.cfg
 
 sudo service haproxy start
