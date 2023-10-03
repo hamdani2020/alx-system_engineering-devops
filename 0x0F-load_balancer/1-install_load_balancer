@@ -12,8 +12,7 @@ echo 'frontend theproxy
 
 backend my_backend_servers
 	balance roundrobin
-	server web1 18.209.180.135:80
-	server web2 54.165.237.14:80'
-sudo tee -a /etc/haproxy/haproxy.cfg
+	server 236369-web-01 18.209.180.135:80
+	server 236369-web-02 54.165.237.14:80' | sudo tee -a /etc/haproxy/haproxy.cfg
 
 sudo service haproxy reload
