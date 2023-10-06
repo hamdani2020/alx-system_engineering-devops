@@ -18,7 +18,6 @@ global
         ssl-default-bind-options ssl-min-ver TLSv1.2 no-tls-tickets
 
 defaults
-
         log     global
         mode    http
         option  httplog
@@ -34,17 +33,9 @@ defaults
         errorfile 503 /etc/haproxy/errors/503.http
         errorfile 504 /etc/haproxy/errors/504.http
 
-frontend http
-        bind *:80
-        http-request set-header X-Forwarded-Proto http
-        default_backend web-backend
-
-frontend www-https
-        bind *:443 ssl crt /etc/letsencrypt/live/www.hamdani.tech/www.hamdani.tech.pem
-        http-request set-header X-Forwarded-Proto https
-        default_backend web-backend
 frontend web-frontend
         bind *:80
+        bind    *:443 ssl crt /etc/letsencrypt/live/www.hamdani.tech/www.hamdani.tech.pem
         default_backend web-backend
 
 backend web-backend
