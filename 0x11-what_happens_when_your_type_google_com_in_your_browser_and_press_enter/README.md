@@ -17,12 +17,11 @@
 
 <p>**Load-Balancer:** High-traffic websites like Google often employ load balancers. Load balancers distribute incoming requests across multiple servers to ensure even resource utilization and prevent overloading any single server. This improves performance and redundancy.</p>
 
-<p>**Web Server:** The load balancer directs your request to one of Google's many web servers. The web server is responsible for processing HTTP requests, handling user authentication, and serving web pages. It retrieves the requested page or performs a search operation, as in Google's case.
-</p>
+**Web Server:** The load balancer directs your request to one of Google's many web servers. The web server is responsible for processing HTTP requests, handling user authentication, and serving web pages. It retrieves the requested page or performs a search operation, as in Google's case.
 
-<p>**Application Server:** In some cases, like when you submit a search query, the web server communicates with an application server. The application server runs the back-end code, processes the request, and generates the dynamic content. For Google, this could involve complex algorithms for search ranking.</p>
+**Application Server:** In some cases, like when you submit a search query, the web server communicates with an application server. The application server runs the back-end code, processes the request, and generates the dynamic content. For Google, this could involve complex algorithms for search ranking.
 
-<p>**Database:** To retrieve personalized information or search results, the application server often needs to fetch data from a database. The database contains vast amounts of information, and it's being queried for the specific data you requested. In Google's case, it could be search results, ads, and others.</p>
+**Database:** To retrieve personalized information or search results, the application server often needs to fetch data from a database. The database contains vast amounts of information, and it's being queried for the specific data you requested. In Google's case, it could be search results, ads, and others.
 
 <p>As your requested data traverses this intricate network of components, it's rapidly assembled and encrypted, making its way back through the load balancer and back to your browser. Your browser then decrypts and renders the page, presenting the familiar Google search interface or any other webpage you've requested.</p>
 
