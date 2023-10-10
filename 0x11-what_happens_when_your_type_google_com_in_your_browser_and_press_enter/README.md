@@ -2,20 +2,18 @@
 
 ![Image](https://s3.amazonaws.com/intranet-projects-files/holbertonschool-sysadmin_devops/298/aJPw3mw.jpg)
 
-<p>Have you ever wondered what goes on behind the scenes when you type ``https://www.google.com`` into your browser's address bar and press Enter? The process might seem instantaneous, but in reality, it involves a complex chain of events that allows you to access the web seamlessly. In this blog post, we will take a closer look at the journey of a simple web request, covering key components like DNS, TCP/IP, firewalls, HTTPS/SSL, load balancers, web servers, application servers, and databases.</p>
+Have you ever wondered what goes on behind the scenes when you type ``https://www.google.com`` into your browser's address bar and press Enter? The process might seem instantaneous, but in reality, it involves a complex chain of events that allows you to access the web seamlessly. In this blog post, we will take a closer look at the journey of a simple web request, covering key components like DNS, TCP/IP, firewalls, HTTPS/SSL, load balancers, web servers, application servers, and databases.
 
-<p>**DNS Request:** The process begins with a Domain Name System (DNS) request. When you type ``www.google.com`` into your browser, it first needs to resolve the human-readable domain name to an IP address that computers understand. Your browser contacts a DNS server, which translates the domain name into an IP address (e.g., 54.207.112.20). This mapping allows your browser to locate the destination server on the internet.
-</p>
+**DNS Request:** The process begins with a Domain Name System (DNS) request. When you type ``www.google.com`` into your browser, it first needs to resolve the human-readable domain name to an IP address that computers understand. Your browser contacts a DNS server, which translates the domain name into an IP address (e.g. 54.207.112.20). This mapping allows your browser to locate the destination server on the internet.
 
-<p>**TCP/IP:** Once your browser knows the IP address of the web server hosting www.google.com, it establishes a connection using the Transmission Control Protocol (TCP) and Internet Protocol (IP). TCP ensures reliable communication by breaking data into packets, sending them, and ensuring they are received and reassembled in the correct order.</p>
 
-<p>**Firewall:** Before your request reaches the web server, it might pass through a firewall. Firewalls are security devices that filter incoming and outgoing traffic to protect a network from malicious activity. They can block or allow traffic based on predefined rules.
-</p>
+**TCP/IP:** Once your browser knows the IP address of the web server hosting ``www.google.com``, it establishes a connection using the Transmission Control Protocol (TCP) and Internet Protocol (IP). TCP ensures reliable communication by breaking data into packets, sending them, and ensuring they are received and reassembled in the correct order.
 
-<p>**HTTPS/SSL:** In the case of Google, you'll notice the "https" in the URL. This means your connection is secured with Hypertext Transfer Protocol Secure (HTTPS), which uses Secure Sockets Layer (SSL) or Transport Layer Security (TLS) to encrypt data exchanged between your browser and the server. This encryption ensures your data is safe from eavesdropping.
-</p>
+**Firewall:** Before your request reaches the web server, it might pass through a firewall. Firewalls are security devices that filter incoming and outgoing traffic to protect a network from malicious activity. They can block or allow traffic based on predefined rules.
 
-<p>**Load-Balancer:** High-traffic websites like Google often employ load balancers. Load balancers distribute incoming requests across multiple servers to ensure even resource utilization and prevent overloading any single server. This improves performance and redundancy.</p>
+**HTTPS/SSL:** In the case of Google, you'll notice the ``https`` in the URL. This means your connection is secured with Hypertext Transfer Protocol Secure (HTTPS), which uses Secure Sockets Layer (SSL) or Transport Layer Security (TLS) to encrypt data exchanged between your browser and the server. This encryption ensures your data is safe from eavesdropping.
+
+**Load-Balancer:** High-traffic websites like Google often employ load balancers. Load balancers distribute incoming requests across multiple servers to ensure even resource utilization and prevent overloading any single server. This improves performance and redundancy.
 
 **Web Server:** The load balancer directs your request to one of Google's many web servers. The web server is responsible for processing HTTP requests, handling user authentication, and serving web pages. It retrieves the requested page or performs a search operation, as in Google's case.
 
