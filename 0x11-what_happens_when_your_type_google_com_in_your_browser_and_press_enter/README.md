@@ -26,4 +26,4 @@
 
 <p>As your requested data traverses this intricate network of components, it's rapidly assembled and encrypted, making its way back through the load balancer and back to your browser. Your browser then decrypts and renders the page, presenting the familiar Google search interface or any other webpage you've requested.</p>
 
-<p>The entire process, from typing ``https://www.google.com`` to seeing the search results, happens in a fraction of a second, thanks to the seamless orchestration of these crucial components. Understanding this process can give you a deeper appreciation for the technological marvel that is the World Wide Web.</p>
+The entire process, from typing ``https://www.google.com`` to seeing the search results, happens in a fraction of a second, thanks to the seamless orchestration of these crucial components. Understanding this process can give you a deeper appreciation for the technological marvel that is the World Wide Web.
