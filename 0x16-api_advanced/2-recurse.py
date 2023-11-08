@@ -21,8 +21,8 @@ def recurse(subreddit, hot_list=[], next_page=None, count=0):
 
     data = rq.json()['data']
 
-    p = data['children']
-    for post in p:
+    posts = data['children']
+    for post in posts:
         count += 1
         hot_list.append(post['data']['title'])
 
